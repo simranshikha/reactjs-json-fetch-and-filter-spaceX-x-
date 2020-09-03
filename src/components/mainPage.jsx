@@ -19,17 +19,14 @@ class MainPage extends Component {
     YearFilter = (clicked_id) => { 
         this.state.yearValue = clicked_id;
         this.setState({yearValue: this.state.yearValue});
-        const {yearValue} = this.state;
-        //alert(yearValue);
     };
 
     render() { 
-        console.log(this.state.yearValue);
         return ( 
             <div className="container-fluid">
                 <Link to="/"  className="pageTitle"><h1>SpaceX Launch Programs</h1></Link>
                 <div className="row">
-                    <div className="col-lg-2 col-md-4 col-12">
+                    <div className="col-lg-2 col-md-4 col-sm-12">
                         <div className="filter-wrapper">
                         <h3>Filter</h3>
                             <div className="filter-body">
@@ -74,7 +71,7 @@ class MainPage extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-10 col-md-8 col-12">
+                    <div className="col-lg-10 col-md-8 col-sm-12">
                         <Switch>
                             <Route exact path="/" component={LandingData} />
                             <Route exact path="/launch-year" component={LaunchYear}>

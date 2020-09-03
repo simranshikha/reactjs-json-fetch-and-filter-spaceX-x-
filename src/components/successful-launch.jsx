@@ -39,7 +39,7 @@ class SuccessfulLaunch extends Component {
             <div className="container">
                 <div className="row">
                     {this.state.items.map((item, i) => (  
-                        <div className="col-3 item-body">                  
+                        <div className="col-lg-3 col-md-6 col-sm-12 item-body">                  
                             <ul key={i} className="item-block">
                                 <li><div className="img-body"> 
                                     <img src={item.links.mission_patch_small} className="img-fluid"/>
